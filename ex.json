@@ -1,0 +1,877 @@
+{
+    "id": "288100716891233929683231105220707885419",
+    "triggerTs": "2024-07-01T16:37:43.967043+00:00", // horario do trigger
+    "processedTs": "2024-12-16T12:31:28.748202+00:00",
+    "eventFiles": { 
+        "20160005": {
+            "id": "285850042958133693309815638648299701046",
+            "eventFileTs": "2024-12-11T14:52:14.099000",
+            "processedTs": "2024-12-11T14:52:19.071854+00:00",
+            "recorderUid": "20160005",
+            "recorderName": "S-01-1",
+            "coordinates": {
+                "coordSys": "ETRS89 TM06",
+                "X": {
+                    "label": "m"
+                },
+                "Y": {
+                    "label": "p"
+                },
+                "Z": {
+                    "label": "z"
+                }
+            },
+            "sensorUnit": "mg",
+            "triggerCh": "T,R,V",
+            "triggerStart": "2024-07-01T16:37:43.968035",
+            "startEvent": "2024-07-01T16:37:13.968035",
+            "acquisRate": 400,
+            "fCutMin": 2,
+            "fCutMax": 20,
+            "df": {
+                "data": {
+                    "indexName": "Time",
+                    "column": [
+                        "T",
+                        "R",
+                        "V"
+                    ],
+                    "relObjName": "16h37m43s_20160005_data.csv"
+                },
+                "cf": [ // fator de pico 
+                    {
+                        "chName": "T",
+                        "peak": 0.39616188,
+                        "rms": 0.050443135,
+                        "value": 7.853633 // = peak / rms  
+                    },
+                    {
+                        "chName": "R",
+                        "peak": 0.7631847,
+                        "rms": 0.08868751,
+                        "value": 8.605324
+                    },
+                    {
+                        "chName": "V",
+                        "peak": 0.3448213,
+                        "rms": 0.049895562,
+                        "value": 6.910861
+                    }
+                ]
+            },
+            "dfFft": { // Encontrar frequencias dominantes 
+                "data": {
+                    "indexName": "Freq.",
+                    "column": [
+                        "T",
+                        "R",
+                        "V"
+                    ],
+                    "relObjName": "16h37m43s_20160005_freq.csv"
+                },
+                "peak": [
+                    {
+                        "chName": "T",
+                        "value": [
+                            {
+                                "freq": 3.315615, // Frquencia dominante.
+                                "ampl": 93.98528 // para ser igual ao valor do seno, multiplcar po 2 e dividir pelo nuemro de pontos utilizados para calcular ffft
+                            },
+                            {
+                                "freq": 7.378559,
+                                "ampl": 89.96769
+                            },
+                            {
+                                "freq": 2.8524814,
+                                "ampl": 80.604416
+                            },
+                            {
+                                "freq": 17.925373,
+                                "ampl": 78.90942
+                            },
+                            {
+                                "freq": 9.18899,
+                                "ampl": 76.5187
+                            }
+                        ]
+                    },
+                    {
+                        "chName": "R",
+                        "value": [
+                            {
+                                "freq": 4.515552,
+                                "ampl": 147.6417
+                            },
+                            {
+                                "freq": 19.083206,
+                                "ampl": 143.79436
+                            },
+                            {
+                                "freq": 6.6943846,
+                                "ampl": 135.60834
+                            },
+                            {
+                                "freq": 10.43103,
+                                "ampl": 133.69914
+                            },
+                            {
+                                "freq": 2.378822,
+                                "ampl": 132.16797
+                            }
+                        ]
+                    },
+                    {
+                        "chName": "V",
+                        "value": [
+                            {
+                                "freq": 13.18878,
+                                "ampl": 82.51096
+                            },
+                            {
+                                "freq": 5.0313144,
+                                "ampl": 80.561745
+                            },
+                            {
+                                "freq": 6.9680543,
+                                "ampl": 74.058014
+                            },
+                            {
+                                "freq": 3.0208936,
+                                "ampl": 73.51242
+                            },
+                            {
+                                "freq": 15.336035,
+                                "ampl": 71.02237
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "20160008": {
+            "id": "123678715698524522888109178523822208697",
+            "eventFileTs": "2024-12-16T12:31:16.255000",
+            "processedTs": "2024-12-16T12:31:17.154225+00:00",
+            "recorderUid": "20160008",
+            "recorderName": "S-01-2",
+            "coordinates": {
+                "coordSys": "ETRS89 TM06",
+                "X": {
+                    "label": "m"
+                },
+                "Y": {
+                    "label": "p"
+                },
+                "Z": {
+                    "label": "z"
+                }
+            },
+            "sensorUnit": "mg",
+            "triggerCh": "None",
+            "triggerStart": "2024-07-01T16:37:43.966640",
+            "startEvent": "2024-07-01T16:37:13.966640",
+            "acquisRate": 400,
+            "fCutMin": 2,
+            "fCutMax": 20,
+            "df": {
+                "data": {
+                    "indexName": "Time",
+                    "column": [
+                        "T",
+                        "R",
+                        "V"
+                    ],
+                    "relObjName": "16h37m43s_20160008_data.csv" // Ler esse arquivo e numeros de linhas de dados. = N 
+                },
+                "cf": [
+                    {
+                        "chName": "T",
+                        "peak": 0.20664436,
+                        "rms": 0.048612315,
+                        "value": 4.250864
+                    },
+                    {
+                        "chName": "R",
+                        "peak": 0.20298903,
+                        "rms": 0.050646074,
+                        "value": 4.0079913
+                    },
+                    {
+                        "chName": "V",
+                        "peak": 0.19680284,
+                        "rms": 0.050859824,
+                        "value": 3.8695147
+                    }
+                ]
+            },
+            "dfFft": {
+                "data": {
+                    "indexName": "Freq.",
+                    "column": [
+                        "T",
+                        "R",
+                        "V"
+                    ],                                         //Para ter um valor de amplitude normalizado. 
+                    "relObjName": "16h37m43s_20160008_freq.csv" //  PAra normalizar : Nesse arquivo, no canal T, pegar valor de linha 
+                },
+                "peak": [
+                    {
+                        "chName": "T",
+                        "value": [
+                            {
+                                "freq": 2.9366102,
+                                "ampl": 96.16172 // esse vaor * 2 a dividir por N.  
+                            },
+                            {
+                                "freq": 12.314817,
+                                "ampl": 85.35774
+                            },
+                            {
+                                "freq": 14.335711,
+                                "ampl": 83.22937
+                            },
+                            {
+                                "freq": 10.020262,
+                                "ampl": 77.757355
+                            },
+                            {
+                                "freq": 6.273189,
+                                "ampl": 77.6425
+                            }
+                        ]
+                    },
+                    {
+                        "chName": "R",
+                        "value": [
+                            {
+                                "freq": 8.115149,
+                                "ampl": 95.68306
+                            },
+                            {
+                                "freq": 17.609137,
+                                "ampl": 89.72137
+                            },
+                            {
+                                "freq": 8.304607,
+                                "ampl": 85.84669
+                            },
+                            {
+                                "freq": 6.8941927,
+                                "ampl": 82.63065
+                            },
+                            {
+                                "freq": 15.346157,
+                                "ampl": 81.12547
+                            }
+                        ]
+                    },
+                    {
+                        "chName": "V",
+                        "value": [
+                            {
+                                "freq": 15.672447,
+                                "ampl": 93.13222
+                            },
+                            {
+                                "freq": 6.0416284,
+                                "ampl": 87.80046
+                            },
+                            {
+                                "freq": 16.019789,
+                                "ampl": 85.66956
+                            },
+                            {
+                                "freq": 9.167697,
+                                "ampl": 81.18001
+                            },
+                            {
+                                "freq": 3.7681236,
+                                "ampl": 79.94414
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "20160004": {
+            "id": "196472989443524647999543793082604912446",
+            "eventFileTs": "2024-12-11T14:52:14.142000",
+            "processedTs": "2024-12-11T14:53:24.066350+00:00",
+            "recorderUid": "20160004",
+            "recorderName": "S-06-1",
+            "coordinates": {
+                "coordSys": "ETRS89 TM06",
+                "X": {
+                    "label": "m"
+                },
+                "Y": {
+                    "label": "p"
+                },
+                "Z": {
+                    "label": "z"
+                }
+            },
+            "sensorUnit": "mg",
+            "triggerCh": "T,R,V",
+            "triggerStart": "2024-07-01T16:37:43.968054",
+            "startEvent": "2024-07-01T16:37:13.968054",
+            "acquisRate": 400,
+            "fCutMin": 2,
+            "fCutMax": 20,
+            "df": {
+                "data": {
+                    "indexName": "Time",
+                    "column": [
+                        "T",
+                        "R",
+                        "V"
+                    ],
+                    "relObjName": "16h37m43s_20160004_data.csv"
+                },
+                "cf": [
+                    {
+                        "chName": "T",
+                        "peak": 0.24064341,
+                        "rms": 0.058719844,
+                        "value": 4.0981617
+                    },
+                    {
+                        "chName": "R",
+                        "peak": 0.3182365,
+                        "rms": 0.068470985,
+                        "value": 4.647757
+                    },
+                    {
+                        "chName": "V",
+                        "peak": 0.22429521,
+                        "rms": 0.057992183,
+                        "value": 3.8676803
+                    }
+                ]
+            },
+            "dfFft": {
+                "data": {
+                    "indexName": "Freq.",
+                    "column": [
+                        "T",
+                        "R",
+                        "V"
+                    ],
+                    "relObjName": "16h37m43s_20160004_freq.csv"
+                },
+                "peak": [
+                    {
+                        "chName": "T",
+                        "value": [
+                            {
+                                "freq": 17.978,
+                                "ampl": 106.87863
+                            },
+                            {
+                                "freq": 2.9998422,
+                                "ampl": 106.283844
+                            },
+                            {
+                                "freq": 13.304563,
+                                "ampl": 97.600525
+                            },
+                            {
+                                "freq": 15.062366,
+                                "ampl": 97.06667
+                            },
+                            {
+                                "freq": 19.114784,
+                                "ampl": 95.14638
+                            }
+                        ]
+                    },
+                    {
+                        "chName": "R",
+                        "value": [
+                            {
+                                "freq": 6.304931,
+                                "ampl": 191.53749
+                            },
+                            {
+                                "freq": 6.0838904,
+                                "ampl": 181.75357
+                            },
+                            {
+                                "freq": 6.6522813,
+                                "ampl": 169.4042
+                            },
+                            {
+                                "freq": 6.3786116,
+                                "ampl": 168.24994
+                            },
+                            {
+                                "freq": 6.1470447,
+                                "ampl": 168.2237
+                            }
+                        ]
+                    },
+                    {
+                        "chName": "V",
+                        "value": [
+                            {
+                                "freq": 5.220778,
+                                "ampl": 107.28964
+                            },
+                            {
+                                "freq": 18.39903,
+                                "ampl": 97.80087
+                            },
+                            {
+                                "freq": 3.0629966,
+                                "ampl": 91.00257
+                            },
+                            {
+                                "freq": 8.957423,
+                                "ampl": 90.93051
+                            },
+                            {
+                                "freq": 8.125888,
+                                "ampl": 89.30201
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "20160003": {
+            "id": "270327519770398935031197405792621353787",
+            "eventFileTs": "2024-12-11T14:52:14.608000",
+            "processedTs": "2024-12-11T14:53:59.511736+00:00",
+            "recorderUid": "20160003",
+            "recorderName": "S-07-1",
+            "coordinates": {
+                "coordSys": "ETRS89 TM06",
+                "X": {
+                    "label": "m"
+                },
+                "Y": {
+                    "label": "p"
+                },
+                "Z": {
+                    "label": "z"
+                }
+            },
+            "sensorUnit": "mg",
+            "triggerCh": "None",
+            "triggerStart": "2024-07-01T16:37:43.966264",
+            "startEvent": "2024-07-01T16:37:13.966264",
+            "acquisRate": 400,
+            "fCutMin": 2,
+            "fCutMax": 20,
+            "df": {
+                "data": {
+                    "indexName": "Time",
+                    "column": [
+                        "T",
+                        "R",
+                        "V"
+                    ],
+                    "relObjName": "16h37m43s_20160003_data.csv"
+                },
+                "cf": [
+                    {
+                        "chName": "T",
+                        "peak": 0.18264498,
+                        "rms": 0.04800426,
+                        "value": 3.8047662
+                    },
+                    {
+                        "chName": "R",
+                        "peak": 0.25923043,
+                        "rms": 0.06432336,
+                        "value": 4.030113
+                    },
+                    {
+                        "chName": "V",
+                        "peak": 0.21870914,
+                        "rms": 0.05470709,
+                        "value": 3.9978206
+                    }
+                ]
+            },
+            "dfFft": {
+                "data": {
+                    "indexName": "Freq.",
+                    "column": [
+                        "T",
+                        "R",
+                        "V"
+                    ],
+                    "relObjName": "16h37m43s_20160003_freq.csv"
+                },
+                "peak": [
+                    {
+                        "chName": "T",
+                        "value": [
+                            {
+                                "freq": 15.135647,
+                                "ampl": 93.92447
+                            },
+                            {
+                                "freq": 19.135332,
+                                "ampl": 88.53263
+                            },
+                            {
+                                "freq": 14.493592,
+                                "ampl": 78.18309
+                            },
+                            {
+                                "freq": 19.166908,
+                                "ampl": 75.06061
+                            },
+                            {
+                                "freq": 12.156935,
+                                "ampl": 74.62642
+                            }
+                        ]
+                    },
+                    {
+                        "chName": "R",
+                        "value": [
+                            {
+                                "freq": 6.4100204,
+                                "ampl": 163.67747
+                            },
+                            {
+                                "freq": 6.146883,
+                                "ampl": 153.63982
+                            },
+                            {
+                                "freq": 6.08373,
+                                "ampl": 148.1829
+                            },
+                            {
+                                "freq": 6.578428,
+                                "ampl": 145.9975
+                            },
+                            {
+                                "freq": 6.50475,
+                                "ampl": 143.60466
+                            }
+                        ]
+                    },
+                    {
+                        "chName": "V",
+                        "value": [
+                            {
+                                "freq": 17.356525,
+                                "ampl": 100.77085
+                            },
+                            {
+                                "freq": 3.6523433,
+                                "ampl": 99.99085
+                            },
+                            {
+                                "freq": 11.093861,
+                                "ampl": 99.879555
+                            },
+                            {
+                                "freq": 14.535694,
+                                "ampl": 92.06397
+                            },
+                            {
+                                "freq": 17.840696,
+                                "ampl": 88.095985
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "20160007": {
+            "id": "139421958471216085367180578428069304123",
+            "eventFileTs": "2024-12-11T14:52:15.351000",
+            "processedTs": "2024-12-11T14:54:35.138619+00:00",
+            "recorderUid": "20160007",
+            "recorderName": "S-09-1",
+            "coordinates": {
+                "coordSys": "ETRS89 TM06",
+                "X": {
+                    "label": "m"
+                },
+                "Y": {
+                    "label": "p"
+                },
+                "Z": {
+                    "label": "z"
+                }
+            },
+            "sensorUnit": "mg",
+            "triggerCh": "None",
+            "triggerStart": "2024-07-01T16:37:43.967760",
+            "startEvent": "2024-07-01T16:37:13.967760",
+            "acquisRate": 400,
+            "fCutMin": 2,
+            "fCutMax": 20,
+            "df": {
+                "data": {
+                    "indexName": "Time",
+                    "column": [
+                        "T",
+                        "R",
+                        "V"
+                    ],
+                    "relObjName": "16h37m43s_20160007_data.csv"
+                },
+                "cf": [
+                    {
+                        "chName": "T",
+                        "peak": 0.23343854,
+                        "rms": 0.057325203,
+                        "value": 4.07218
+                    },
+                    {
+                        "chName": "R",
+                        "peak": 0.21547379,
+                        "rms": 0.054664716,
+                        "value": 3.9417343
+                    },
+                    {
+                        "chName": "V",
+                        "peak": 0.19838995,
+                        "rms": 0.051380016,
+                        "value": 3.8612278
+                    }
+                ]
+            },
+            "dfFft": {
+                "data": {
+                    "indexName": "Freq.",
+                    "column": [
+                        "T",
+                        "R",
+                        "V"
+                    ],
+                    "relObjName": "16h37m43s_20160007_freq.csv"
+                },
+                "peak": [
+                    {
+                        "chName": "T",
+                        "value": [
+                            {
+                                "freq": 16.451332,
+                                "ampl": 105.01521
+                            },
+                            {
+                                "freq": 5.704813,
+                                "ampl": 96.23621
+                            },
+                            {
+                                "freq": 9.715022,
+                                "ampl": 96.18741
+                            },
+                            {
+                                "freq": 4.12599,
+                                "ampl": 94.58526
+                            },
+                            {
+                                "freq": 18.282766,
+                                "ampl": 90.938866
+                            }
+                        ]
+                    },
+                    {
+                        "chName": "R",
+                        "value": [
+                            {
+                                "freq": 18.57748,
+                                "ampl": 114.14724
+                            },
+                            {
+                                "freq": 5.557456,
+                                "ampl": 102.92699
+                            },
+                            {
+                                "freq": 11.49383,
+                                "ampl": 94.294685
+                            },
+                            {
+                                "freq": 4.12599,
+                                "ampl": 89.95257
+                            },
+                            {
+                                "freq": 16.051365,
+                                "ampl": 88.42531
+                            }
+                        ]
+                    },
+                    {
+                        "chName": "V",
+                        "value": [
+                            {
+                                "freq": 4.052312,
+                                "ampl": 99.083275
+                            },
+                            {
+                                "freq": 12.956872,
+                                "ampl": 84.97077
+                            },
+                            {
+                                "freq": 12.630582,
+                                "ampl": 82.885475
+                            },
+                            {
+                                "freq": 19.840538,
+                                "ampl": 82.58286
+                            },
+                            {
+                                "freq": 2.6418967,
+                                "ampl": 82.19335
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "20160006": {
+            "id": "153109327260932666253605342935201448028",
+            "eventFileTs": "2024-12-11T14:52:16.503000",
+            "processedTs": "2024-12-11T14:55:09.419312+00:00",
+            "recorderUid": "20160006",
+            "recorderName": "S-10-1",
+            "coordinates": {
+                "coordSys": "ETRS89 TM06",
+                "X": {
+                    "label": "m"
+                },
+                "Y": {
+                    "label": "p"
+                },
+                "Z": {
+                    "label": "z"
+                }
+            },
+            "sensorUnit": "mg",
+            "triggerCh": "None",
+            "triggerStart": "2024-07-01T16:37:43.965913",
+            "startEvent": "2024-07-01T16:37:13.965913",
+            "acquisRate": 400,
+            "fCutMin": 2,
+            "fCutMax": 20,
+            "df": {
+                "data": {
+                    "indexName": "Time",
+                    "column": [
+                        "T",
+                        "R",
+                        "V"
+                    ],
+                    "relObjName": "16h37m43s_20160006_data.csv"
+                },
+                "cf": [
+                    {
+                        "chName": "T",
+                        "peak": 0.22216925,
+                        "rms": 0.05737927,
+                        "value": 3.8719425
+                    },
+                    {
+                        "chName": "R",
+                        "peak": 0.25198856,
+                        "rms": 0.057975136,
+                        "value": 4.3464937
+                    },
+                    {
+                        "chName": "V",
+                        "peak": 0.20727472,
+                        "rms": 0.055912286,
+                        "value": 3.707141
+                    }
+                ]
+            },
+            "dfFft": {
+                "data": {
+                    "indexName": "Freq.",
+                    "column": [
+                        "T",
+                        "R",
+                        "V"
+                    ],
+                    "relObjName": "16h37m43s_20160006_freq.csv"
+                },
+                "peak": [
+                    {
+                        "chName": "T",
+                        "value": [
+                            {
+                                "freq": 7.841486,
+                                "ampl": 137.83308
+                            },
+                            {
+                                "freq": 10.220245,
+                                "ampl": 105.00634
+                            },
+                            {
+                                "freq": 15.051443,
+                                "ampl": 97.23645
+                            },
+                            {
+                                "freq": 15.283004,
+                                "ampl": 96.51861
+                            },
+                            {
+                                "freq": 14.556746,
+                                "ampl": 91.667885
+                            }
+                        ]
+                    },
+                    {
+                        "chName": "R",
+                        "value": [
+                            {
+                                "freq": 2.3156066,
+                                "ampl": 104.68334
+                            },
+                            {
+                                "freq": 9.062443,
+                                "ampl": 102.59361
+                            },
+                            {
+                                "freq": 19.314264,
+                                "ampl": 93.02949
+                            },
+                            {
+                                "freq": 6.0100517,
+                                "ampl": 91.27887
+                            },
+                            {
+                                "freq": 17.430202,
+                                "ampl": 90.07008
+                            }
+                        ]
+                    },
+                    {
+                        "chName": "V",
+                        "value": [
+                            {
+                                "freq": 8.609846,
+                                "ampl": 100.78841
+                            },
+                            {
+                                "freq": 19.598454,
+                                "ampl": 94.694664
+                            },
+                            {
+                                "freq": 15.577718,
+                                "ampl": 93.79988
+                            },
+                            {
+                                "freq": 12.777939,
+                                "ampl": 91.79666
+                            },
+                            {
+                                "freq": 15.261953,
+                                "ampl": 91.01521
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}
